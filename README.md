@@ -1,2 +1,2 @@
-# -TajikGuide-AI
+# TajikGuide-AI
     AI Travel Platform for Tajikistan
