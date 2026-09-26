@@ -1,15 +1,17 @@
 from fastapi import FastAPI
-from places import router as places_router
+from places import get_places
 
 app = FastAPI(
     title="TajikGuide AI",
-    version="1.0.0"
+    version="1.0"
 )
-
-app.include_router(places_router)
 
 @app.get("/")
 def home():
     return {
-        "message": "Welcome to TajikGuide AI"
+        "message": "Welcome to TajikGuide AI!"
     }
+
+@app.get("/places")
+def places():
+    return get_places()
