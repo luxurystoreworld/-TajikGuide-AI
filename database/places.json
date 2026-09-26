@@ -1,1 +1,58 @@
-
+[
+  {
+    "id": 1,
+    "name": "Iskanderkul",
+    "city": "Sughd",
+    "description": "Beautiful mountain lake surrounded by the Fann Mountains.",
+    "rating": 4.9
+  },
+  {
+    "id": 2,
+    "name": "Dushanbe",
+    "city": "Dushanbe",
+    "description": "Capital city of Tajikistan with museums and parks.",
+    "rating": 4.8
+  },
+  {
+    "id": 3,
+    "name": "Pamir Highway",
+    "city": "GBAO",
+    "description": "One of the highest and most scenic roads in the world.",
+    "rating": 5.0
+  },
+  {
+    "id": 4,
+    "name": "Seven Lakes",
+    "city": "Panjakent",
+    "description": "Seven colorful mountain lakes with amazing landscapes.",
+    "rating": 4.9
+  },
+  {
+    "id": 5,
+    "name": "Khujand",
+    "city": "Sughd",
+    "description": "Ancient city on the Silk Road.",
+    "rating": 4.7
+  },
+  {
+    "id": 6,
+    "name": "Nurek Reservoir",
+    "city": "Nurek",
+    "description": "Largest reservoir in Central Asia with turquoise water.",
+    "rating": 4.8
+  },
+  {
+    "id": 7,
+    "name": "Khoja Obi Garm",
+    "city": "Varzob",
+    "description": "Famous thermal spa and health resort.",
+    "rating": 4.6
+  },
+  {
+    "id": 8,
+    "name": "Fann Mountains",
+    "city": "Sughd",
+    "description": "Popular destination for hiking and mountaineering.",
+    "rating": 5.0
+  }
+]
