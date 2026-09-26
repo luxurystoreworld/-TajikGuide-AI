@@ -1,28 +1,8 @@
-from fastapi import APIRouter
+import json
+from pathlib import Path
 
-router = APIRouter()
+DATABASE = Path(__file__).parent.parent / "database" / "places.json"
 
-places = [
-    {
-        "id": 1,
-        "name": "Iskanderkul",
-        "city": "Sughd",
-        "description": "Beautiful mountain lake in Tajikistan."
-    },
-    {
-        "id": 2,
-        "name": "Dushanbe",
-        "city": "Dushanbe",
-        "description": "Capital city of Tajikistan."
-    },
-    {
-        "id": 3,
-        "name": "Khujand",
-        "city": "Sughd",
-        "description": "Historic city in northern Tajikistan."
-    }
-]
-
-@router.get("/places")
 def get_places():
-    return places
+    with open(DATABASE, "r", encoding="utf-8") as file:
+        return json.load(file)
