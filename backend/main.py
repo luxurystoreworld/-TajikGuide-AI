@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from places import get_places
 
 app = FastAPI(
@@ -15,3 +15,14 @@ def home():
 @app.get("/places")
 def places():
     return get_places()
+
+@app.get("/places/{name}")
+def place(name: str):
+    for place in get_places():
+        if place["name"].lower() == name.lower():
+            return place
+
+    raise HTTPException(
+        status_code=404,
+        detail="Place not found"
+    )
